@@ -42,3 +42,5 @@ def test_main_invalid_argument_count(requests_mock):
             main()
         assert exit.type == SystemExit
         assert exit.value.code == 1
+
+# flake8: noqa
