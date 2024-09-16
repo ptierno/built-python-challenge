@@ -31,7 +31,7 @@ def test_ip_in_cidr_list_contains_ip(requests_mock):
     requests_mock.get(RIPE_URL, json=RIPE_DATA)
     assert ip_in_cidr_list("23.154.176.1") == True
 
-def test_ip_in_cidr_list_contains_ip(requests_mock):
+def test_ip_in_cidr_list_not_contains_ip(requests_mock):
     requests_mock.get(RIPE_URL, json=RIPE_DATA)
     assert ip_in_cidr_list("1.1.1.1") == False
 
